@@ -14,7 +14,7 @@ fs.readFile('teachers.txt', 'utf8', (err, data) => {
   const updatedContent = data + '\n' + currentTeacher;
 
   fs.writeFile('teachers.txt', updatedContent, 'utf8', (err) =>{
-     / (err){
+     if (err){
       console.error('Error writing to the file:',err);
       return;
   }
