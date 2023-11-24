@@ -1,6 +1,7 @@
-const fs = require('fs');
+
 
 function setToTeacher(){
+  const fs = require('fs');
   let username = document.getElementById("textfield1).value;
   let password = document.getElementById("textfield2).value;
   let currentTeacher = username + ";" + password;
